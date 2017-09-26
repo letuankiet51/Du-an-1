@@ -1,0 +1,40 @@
+body 
+{
+	background: white;
+	font-style: 14px;
+}
+#Top
+{
+	background: black;
+	width: 100%;
+	font-size: 0.7857em;
+	border-bottom: 0 solid #ededed;
+	color: white;
+}
+.top-right
+{
+	font-weight: 200px;
+	text-align: right;
+}
+.top-right>img 
+{
+	padding-right: 5px;
+}
+#Top-2
+{
+	background-color: white;
+	font-variant:small-caps;
+}
+#Top-2 ul
+{
+	list-style: none;
+	display: block;
+	list-style-type: none;''
+	position: relative;
+}
+#Top-2 .col-md-8
+{
+	color: blue;
+	font-size: 14px;
+	font-variant: small-caps;
+}

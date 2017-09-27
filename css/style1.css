@@ -1,0 +1,88 @@
+body {
+      
+}
+#Top
+{
+	background: #f7e23b;
+}
+#menu ul 
+{
+	padding-top: 10px;
+  	list-style-type: none;
+  	text-align: center;
+  	float: right;
+}
+#menu li 
+{
+  	color: #f1f1f1;
+  	display: inline-block;
+  	padding: 15px;
+  	height: 5px;
+  	line-height: 40px;
+  	margin-left: -5px;
+}
+#menu li {
+ 	position: relative;
+}
+#menu a {
+  	text-decoration: none;
+	color: black;
+	display: block;
+}
+#menu a:hover 
+{
+	color: #333;
+	border-bottom: black solid 2px;
+}
+#Banner img
+{
+	width: 100%;
+}
+.mo-ta
+{
+	margin-bottom: 120px;
+}
+.mo-ta a,p
+{
+	color: rgb(24, 37, 170);
+	margin-top: 6px;
+	text-align: center;
+	text-decoration: none;
+}
+.mo-ta h2
+{
+	text-align: center;
+	padding: 30px;
+}
+.mo-ta p
+{
+	font-size: 18px;
+    color: #1825aa;
+    line-height: 1.5;
+    margin-bottom: 35px;
+}
+#Footer
+{
+	background-position: left top;
+}
+#Footer
+{
+	background-color: #ffffff;
+}
+.bot
+{
+	margin-top: 50px;
+}
+.cot-1 p
+{
+	border-right: black solid 2px;
+	color: black;
+	text-align: left;
+	display: block;
+	font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+}

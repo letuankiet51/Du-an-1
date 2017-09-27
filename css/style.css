@@ -1,3 +1,17 @@
+a
+{
+	color: black;
+	display: block;
+}
+a:hover 
+{
+	color: ;
+}
+a:link
+{
+	display: block;
+
+}
 body 
 {
 	background: white;
@@ -11,14 +25,31 @@ body
 	border-bottom: 0 solid #ededed;
 	color: white;
 }
-.top-right
+.top-1
 {
-	font-weight: 200px;
-	text-align: right;
+	padding: 3px;
 }
-.top-right>img 
+.top-left
+{
+	text-align: left;
+}
+.top-left>img 
 {
 	padding-right: 5px;
+}
+.mangxahoi
+{
+	float: left;
+	text-align: left;
+}
+.mangxahoi ul
+{
+	list-style: none;
+	list-style-type: none;
+}
+.mangxahoi li
+{
+	display: inline-block;
 }
 #Top-2
 {
@@ -29,12 +60,34 @@ body
 {
 	list-style: none;
 	display: block;
-	list-style-type: none;''
+	list-style-type: none;
 	position: relative;
 }
-#Top-2 .col-md-8
+#Top-2 .col-md-6
 {
 	color: blue;
 	font-size: 14px;
-	font-variant: small-caps;
+	text-align: right;
+}
+#Top-2 .menu li
+{
+	display: inline-block;
+}
+#Banner
+{
+	background: black;
+	padding-bottom: 5px;
+	color: white;
+}
+.Gioi-thieu
+{
+}
+.Gioi-thieu .mo-ta
+{
+	padding-left: 50px;
+}
+.Gioi-thieu .hinh-gioi-thieu
+{
+	float: right;
+	text-align: right;
 }

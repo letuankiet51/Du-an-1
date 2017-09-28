@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style1.css">
+	<link rel="stylesheet" type="text/css" href="css/testslide.css">
 </head>
 <body>
 	<div id="Top">
@@ -16,7 +17,7 @@
 			<div class="menu-top col-md-9">
 				<div id="menu">
 				  <ul>
-				    <li><a href="#" style="border-bottom: black solid 2px;"><span>Trang chủ</span></a></li>
+				    <li><a href="#"><span>Trang chủ</span></a></li>
 				    <li><a href="#">Tin tức</a></li>
 				    <li><a href="#">Chia sẽ kinh nghiệm</a>
 				    </li>
@@ -28,8 +29,35 @@
 			</div>
 		</div>
 	</div>
+	<div class="slideshow-container">
+        <div class="mySlides fade">
+          	<img src="img/Rakor-3-1.png" style="width:100%">
+         	<div class="hinh-1">
+         		<h2 style="color:#1825aa">TÂP ĐOÀN SẢN PHẨM HUETRONICS</h2>
+         		<a href="#" class="boderh1" style="font-size: 20px;">XEM THÊM</a>
+         		
+         	</div>
+        </div>
+        <div class="mySlides fade">
+          	<img src="img/ramdisk-crop_173258525_EfrHs.jpg" style="width:100%;height: 579px;">
+          	<div class="hinh-2">
+          		<h2 style="color: rgb(247, 226, 59);">TRÁNH NHIỆM-BỀN VỮNG-CÔNG BẰNG</h2>
+          	</div>
+        </div>
+        <div class="mySlides fade">
+          <img src="http://minhphu.com/wp-content/uploads/2016/12/DSC_3887a-1.jpg" style="width:100%;height:579px;">
+          <div class="text">
+          	<h4>LỄ CÔNG BỐ NHẬN DIỆN THƯƠNG HIỆU MỚI</h4>
+          </div>
+        </div>
+      </div>
+     	<div style="text-align:center">
+        <span class="dot" onclick="currentSlide(0)"></span> 
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+      </div> 
+	</div>
 	<div id="Banner">
-		<img src="img/banner2.jpg">
 		<img src="img/banner4.jpg">
 		<img src="img/banner3.jpg">
 	</div>
@@ -40,9 +68,9 @@
 	<footer id="Footer">
 		<img src="img/footer.png">
 		<div class="bot row container">
-			<div class="cot-1 col-md-4">
+			<div class="cot-1 col-md-5">
 				<img src="img/logo4.png">
-				<p> Ở Minh Phú, chúng tôi không chỉ là nhà sản xuất tôm.
+				<p> Ở HuếTronics, chúng tôi không chỉ là nhà sản xuất tôm.
 					<br>
 					Chúng tôi là những người vun trồng và nuôi dưỡng, 
 					<br>
@@ -57,13 +85,49 @@
 					Và một Việt Nam tốt đẹp hơn.
 				</p>
 			</div>
-			<div class="cot-2 col-md-4">
+			<div class="cot-2 col-md-3">
 				<h4>TIN TỨC MỚI</h4>
 				<ul>
 					<li></li>
 				</ul>
 			</div>
+			<div class="cot-3 col-md-4">
+				<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FColpa-812398755519916%2F&tabs=timeline&width=340&height=70&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=266389983788669" width="340" height="150" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+			</div>
 		</div>
 	</footer>
 </body>
+<script>
+  var slideIndex;
+  function showSlides() 
+  {
+  	var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+     	for (i = 0; i < slides.length; i++) 
+     	{
+          	slides[i].style.display = "none";  
+       	}
+       	for (i = 0; i < dots.length; i++) 
+       	{
+       		dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex].style.display = "block";  
+        dots[slideIndex].className += " active";
+          //chuyển đến slide tiếp theo
+        slideIndex++;
+          //nếu đang ở slide cuối cùng thì chuyển về slide đầu
+        if (slideIndex > slides.length - 1) 
+        {
+           slideIndex = 0
+        }    
+          //tự động chuyển đổi slide sau 5s
+          setTimeout(showSlides, 3000);
+	}
+	showSlides(slideIndex = 0);
+	function currentSlide(n)
+	{
+        showSlides(slideIndex = n);
+    }
+</script>
 </html>

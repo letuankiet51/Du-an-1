@@ -1,7 +1,7 @@
 body {
       
 }
-a
+a:hover
 {
 	text-decoration: none;
 }
@@ -46,7 +46,7 @@ a
 {
 	margin-bottom: 120px;
 }
-.mo-ta a,p
+.mo-ta a
 {
 	color: rgb(24, 37, 170);
 	margin-top: 6px;
@@ -148,4 +148,31 @@ a
 	width: 100%;
 	text-align: center;
 	bottom: 70%;
+}
+.banner-1
+{
+	position: relative;
+
+}
+.banner-1-1
+{
+	position: absolute;
+	text-align: center;
+	bottom: 50%;
+	left: 25%;
+}
+.banner-2
+{
+	position: relative;
+
+}
+.banner-1-2
+{
+	position: absolute;
+	text-align: center;
+	bottom: 20%;
+	background: rgba(255,226,60,0.89);
+	opacity: 0.8;
+	padding: 75px 50px 75px 50px;
+	left: 36%;
 }
